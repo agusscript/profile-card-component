@@ -7,5 +7,19 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-gray);
+}
+
+.card-content {
+    margin: 0 auto;
+    width: 350px;
+    height: 360px;
+    background-color: white;
+}
+
+.stats {
+    display: flex;
+    gap: 2rem;
+    
 }
