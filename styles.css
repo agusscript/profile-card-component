@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');   /*400, 700*/
 
 :root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
     --Dark-gray: hsl(0, 0%, 59%);
 }
 
@@ -8,7 +11,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
-    background-color: var(--Dark-gray);
+    background-color: black;
+    background-image: url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position-x: -320px;
+    background-position-y: -570px;
+    background-color: var(--Dark-cyan);
 }
 
 main {
@@ -17,6 +25,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-x: 650px;
+    background-position-y: 360px;
 }
 
 .card-container {
@@ -24,12 +36,18 @@ main {
     flex-direction: column;
     position: relative;
 }
+.top-card-img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;  
+}
 
 .card-content {
-    width: 400px;
-    height: 300px;
+    width: 380px;
+    height: 280px;
     background-color: white;
     text-align: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .profile-img {
@@ -39,7 +57,7 @@ main {
     position: absolute;
     display: flex;
     align-self: center;
-    margin-top: 6.5rem;
+    margin-top: 6.3rem;
     border: 6px solid white;
 }
 
@@ -49,18 +67,44 @@ main {
 
 .name {
     display: inline;
+    font-size: 1.25rem;
+}
+
+.age {
+    color: var(--Dark-gray);
+    font-size: 1.15rem;
+    margin-left: 0.3rem;
+}
+
+.place {
+    color: var(--Dark-gray);
+    line-height: 0.4rem;
 }
 
 hr {
     margin-top: 2rem;
+    border: 0.5mm solid rgb(206, 203, 203);
+    border-top: none;
 }
 
 .stats {
     width: 100%;
     display: flex;
-    gap: 2rem;
+    gap: 3.6rem;
     align-items: flex-end;
     justify-content: center;
     text-align: center;
-    margin-top: 0.8rem;
+    margin-top: 1.7rem;
+    line-height: 2px;
+}
+
+.stats p {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.stats span {
+    color: var(--Dark-gray);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
 }
