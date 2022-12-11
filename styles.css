@@ -38,7 +38,7 @@ main {
 }
 .top-card-img {
     border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;  
+    border-top-right-radius: 1rem;
 }
 
 .card-content {
@@ -107,4 +107,59 @@ hr {
     color: var(--Dark-gray);
     font-size: 0.7rem;
     letter-spacing: 0.1em;
+}
+
+.attribution {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attribution p {
+    font-size: 0.8rem;
+    line-height: 0.3rem;
+    color: white;
+    
+}
+
+@media(max-width: 400px) {
+    .card-content {
+        width: 320px;
+        height: 250px;
+    }
+
+    .top-card-img {
+        width: 320px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+        margin-top: 5.2rem;
+    }
+
+    .description {
+        margin-top: 4rem;
+    }
+
+    .stats {
+        gap: 3.2rem;
+    }
+
+    .stats p {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-height: 490px) {
+    .attribution {
+        display: none;
+    }
+    
+    main {
+        padding: 1rem;
+    }
 }
