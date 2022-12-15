@@ -154,7 +154,7 @@ hr {
     }
 }
 
-@media(max-height: 490px) {
+@media(max-height: 550px) {
     .attribution {
         display: none;
     }
