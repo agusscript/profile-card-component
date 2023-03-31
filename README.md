@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - [Fron End Mentor solution](https://www.frontendmentor.io/solutions/profile-card-component-wtKUrr3io6)
-- [Live site](https://agusscript.github.io/Profile-card-component/)
+- [Live site](https://codepen.io/agusscript/pen/vYzwaGK?editors=1100)
 
 ## My process
 
